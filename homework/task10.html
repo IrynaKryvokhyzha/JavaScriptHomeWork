@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача 6</h1>
+		З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. 
+		Обчислити вартість кожного товару окремо та загальну вартість. 
+		Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+	<p> 
+	</p>
+
+	<script>
+		//1.Вводимо необхідні дані
+		const firstItemPrice = parseFloat(prompt('Введіть вартість першого товару','0'))
+		const firstItemQuantity = parseFloat(prompt('Введіть кількість першого товару','0'))
+		const secondItemPrice = parseFloat(prompt('Введіть вартість другого товару','0'))
+		const secondItemQuantity = parseFloat(prompt('Введіть кількість другого товару','0'))
+		const thirdItemPrice = parseFloat(prompt('Введіть вартість третього товару','0'))
+		const thirdItemQuantity = parseFloat(prompt('Введіть кількість третього товару','0'))
+
+		//2. Знаходимо результат
+		const firstItemTotalPrice = firstItemPrice*firstItemQuantity
+		const secondItemTotalPrice = secondItemPrice*secondItemQuantity
+		const thirdItemTotalPrice = thirdItemPrice*thirdItemQuantity
+		const totalPrice = firstItemTotalPrice + secondItemTotalPrice + thirdItemTotalPrice
+		
+		//3. Виводимо результат
+		document.write(`
+		Перший товар : ${firstItemPrice}грн * ${firstItemQuantity} = ${firstItemTotalPrice}грн <br>
+		Другий товар : ${secondItemPrice}грн * ${secondItemQuantity} = ${secondItemTotalPrice}грн <br>
+		Третій товар : ${thirdItemPrice}грн * ${thirdItemQuantity} = ${thirdItemTotalPrice}грн <br>
+		Всього до сплати : ${totalPrice}
+		`)
+	</script>
+</body>
+</html>
+
+<!-- <table border="2px">
+	<tr>
+		<th>Товар</th>
+		<th>Вартість в грн</th>
+		<th>Кількість</th>
+		<th>Сума в грн</th>
+	</tr>
+	<tr>
+		<td>Перший товар</td>
+		<td>${firstItemPrice}</td>
+		<td>${firstItemQuantity}</td>
+		<td>${firstItemTotalPrice}</td>
+	</tr>
+	
+</table> -->

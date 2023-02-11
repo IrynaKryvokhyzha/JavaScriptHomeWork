@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача 0/3</h1>
+
+	<p>Обчислити значення виразів <br>
+		3. S3=cbrt((a+b)c)
+	</p>
+	<script>
+		//1.Вводимо необхідні дані
+		let a = parseInt(prompt('a=','0'))
+		let b = parseInt(prompt('b=','0'))
+		let c = parseInt(prompt('c=','0'))
+
+		//2. Знаходимо результат
+		let num1 = a+b
+		let num2 = num1*c
+		let num3 = Math.sqrt(num2)
+		let s3 = Math.cbrt(num3).toFixed(2)
+
+		//3. Виводимо результат
+		document.write(`S3 = ${s3}`)
+
+	</script>
+</body>
+</html>
